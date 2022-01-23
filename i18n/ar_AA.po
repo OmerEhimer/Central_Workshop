@@ -1,0 +1,1845 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* central_workshope
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-11 20:29+0000\n"
+"PO-Revision-Date: 2021-07-11 20:29+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.maintenance_kanban_view
+msgid "<b>Request to:</b>"
+msgstr ""
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.cars_kanban_view
+msgid "<b>Responseble User:</b>"
+msgstr "الممستخدم المسؤل"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.maintenance_kanban_view
+msgid "<i class=\"fa fa-comments\" role=\"img\" aria-label=\"Unread Messages\"/>"
+msgstr ""
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.maintnence_form_id
+msgid "<span class=\"ml8\">hours</span>"
+msgstr "ساعه"
+
+#. module: central_workshope
+#: model:ir.model.fields,help:central_workshope.field_maintenance_order_line__p_type
+msgid "A storable product is a product for which you manage stock. The Inventory app has to be installed.\n"
+"A consumable product is a product for which stock is not managed.\n"
+"A service is a non-material product you provide."
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__message_needaction
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__message_needaction
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__message_needaction
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__message_needaction
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__message_needaction
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__message_needaction
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__message_needaction
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__active
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__active
+msgid "Active"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__activity_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__activity_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__activity_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__activity_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__activity_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__activity_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__activity_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__activity_ids
+msgid "Activities"
+msgstr "النشاطات"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__activity_state
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__activity_state
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__activity_state
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__activity_state
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__activity_state
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__activity_state
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__activity_state
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: central_workshope
+#: selection:workshope.cars,car_type:0
+msgid "Administrative"
+msgstr "إداريه"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__message_attachment_count
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__message_attachment_count
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__message_attachment_count
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__message_attachment_count
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__message_attachment_count
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__message_attachment_count
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__message_attachment_count
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.workshope_cars_search
+#: selection:workshope.cars,transmision:0
+msgid "Automatic"
+msgstr "اوتامتك"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.kanban_rsf_weapon_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.kanban_workshope_employee_id
+msgid "Avatar"
+msgstr ""
+
+#. module: central_workshope
+#: selection:workshope.maintenance,kanban_state:0
+msgid "Blocked"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__brand_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars_model__brand_id
+msgid "Brand"
+msgstr "الماركه"
+
+#. module: central_workshope
+#: model:ir.model,name:central_workshope.model_fleet_vehicle_model_brand
+msgid "Brand of the vehicle"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon_line__car_id
+msgid "Car"
+msgstr "المركبه"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.maintnence_form_id
+msgid "Car Dietails"
+msgstr "بيانات المركبه"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.cars_kanban_view
+msgid "Car Name :"
+msgstr "إسم المركبه"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__cars_seq
+msgid "Car Sequence"
+msgstr "المتسلسل"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__car_type
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__car_type
+#: model_terms:ir.ui.view,arch_db:central_workshope.search_view_maintenance_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.workshope_cars_search
+msgid "Car Type"
+msgstr "نوع المركبه"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__card_no
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__card_number
+msgid "Card NO"
+msgstr "رقم البطاقه"
+
+#. module: central_workshope
+#: model:ir.actions.act_window,name:central_workshope.workshope_cars_action
+#: model:ir.ui.menu,name:central_workshope.cars_menu_id
+msgid "Cars"
+msgstr "المركبه"
+
+#. module: central_workshope
+#: model:ir.model,name:central_workshope.model_workshope_cars
+#: model_terms:ir.ui.view,arch_db:central_workshope.workshope_cars_form_id
+msgid "Cars Form"
+msgstr "المركبه"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__catt
+#: model_terms:ir.ui.view,arch_db:central_workshope.workshope_cars_search
+msgid "Category"
+msgstr "الفئه"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__category
+msgid "Catogory"
+msgstr "الفئه"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__category
+msgid "Cattegory"
+msgstr "الفئه"
+
+#. module: central_workshope
+#: model:ir.ui.menu,name:central_workshope.workshope_root_menu
+msgid "Central WorkShope"
+msgstr "الورشــــة المــــركزيه"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__chassis
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__chassis_id
+msgid "Chassis"
+msgstr "الشاسي"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__color
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__color
+msgid "Color Index"
+msgstr ""
+
+#. module: central_workshope
+#: selection:workshope.cars,car_type:0
+msgid "Combative"
+msgstr "قتاليه"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.workshope_cars_search
+msgid "Company"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.ui.menu,name:central_workshope.workshope_configeration_id
+msgid "Configration"
+msgstr "الإعدادت"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.maintnence_form_id
+#: selection:workshope.maintenance,state:0
+msgid "Confirmation"
+msgstr "تم التصديق"
+
+#. module: central_workshope
+#: model:ir.model,name:central_workshope.model_workshope_malfunctions_type
+msgid "Convert Service Type"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model,name:central_workshope.model_workshoe_malfunctions
+msgid "Convert malfunctions"
+msgstr ""
+
+#. module: central_workshope
+#: selection:workshope.maintenance,maintenance_type:0
+msgid "Corrective"
+msgstr "وقائيه"
+
+#. module: central_workshope
+#: model_terms:ir.actions.act_window,help:central_workshope.employee_action_id
+msgid "Create a new Engineer !"
+msgstr "إنشاء مهندس جديد"
+
+#. module: central_workshope
+#: model_terms:ir.actions.act_window,help:central_workshope.section_action_id
+msgid "Create a new Section !"
+msgstr "إنشلء قسم جديد"
+
+#. module: central_workshope
+#: model_terms:ir.actions.act_window,help:central_workshope.units_action_id
+msgid "Create a new Unit !"
+msgstr "إنشاء وحده جديده"
+
+#. module: central_workshope
+#: model_terms:ir.actions.act_window,help:central_workshope.in_maint_action
+#: model_terms:ir.actions.act_window,help:central_workshope.ref_weapon_action_id
+#: model_terms:ir.actions.act_window,help:central_workshope.workshope_cars_action
+msgid "Create a new Weapon !"
+msgstr "إنشاء سلاح جديد"
+
+#. module: central_workshope
+#: model_terms:ir.actions.act_window,help:central_workshope.fleet_vehicle_model_brand_action_id
+msgid "Create a new make"
+msgstr "إنشاء ماركه جديده"
+
+#. module: central_workshope
+#: model_terms:ir.actions.act_window,help:central_workshope.fleet_vehicle_model_action_id
+msgid "Create a new model"
+msgstr "إنشاء موديل جديد"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_employee_line__create_uid
+#: model:ir.model.fields,field_description:central_workshope.field_fleet_vehicle_model_brand__create_uid
+#: model:ir.model.fields,field_description:central_workshope.field_maintenance_order_line__create_uid
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__create_uid
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon_line__create_uid
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__create_uid
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__create_uid
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars_model__create_uid
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__create_uid
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__create_uid
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__create_uid
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__create_uid
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__create_uid
+msgid "Created by"
+msgstr "تم الإنشاء بواسطة"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_employee_line__create_date
+#: model:ir.model.fields,field_description:central_workshope.field_fleet_vehicle_model_brand__create_date
+#: model:ir.model.fields,field_description:central_workshope.field_maintenance_order_line__create_date
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__create_date
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon_line__create_date
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__create_date
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__create_date
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars_model__create_date
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__create_date
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__create_date
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__create_date
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__create_date
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.ui.menu,name:central_workshope.dash_root_menu
+msgid "Dashboard"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.ui.menu,name:central_workshope.dashborad_menu_id
+msgid "Dashboard "
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__convertFormDate
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__form_date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.cars_kanban_view
+#: model_terms:ir.ui.view,arch_db:central_workshope.maintenance_kanban_view
+msgid "Delete"
+msgstr "حذف"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_employee_line__end_date
+msgid "Delevery Date"
+msgstr "تاريخ التسليم"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.maintnence_form_id
+msgid "Delivery"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.actions.act_window,name:central_workshope.section_action_id
+#: model:ir.model,name:central_workshope.model_workshope_employee
+#: model:ir.model,name:central_workshope.model_workshope_section
+#: model:ir.model,name:central_workshope.model_workshope_units
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__section_ids
+msgid "Department"
+msgstr "القسم"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__name
+msgid "Department Name"
+msgstr "الاسم"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__section_seq
+msgid "Department Seq"
+msgstr "المتسلسل"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_employee_line__display_name
+#: model:ir.model.fields,field_description:central_workshope.field_fleet_vehicle_model_brand__display_name
+#: model:ir.model.fields,field_description:central_workshope.field_maintenance_order_line__display_name
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__display_name
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon_line__display_name
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__display_name
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__display_name
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars_model__display_name
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__display_name
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__display_name
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__display_name
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__display_name
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.maintnence_form_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.workshope_cars_form_id
+#: selection:rsf.weapon,state:0
+#: selection:workshope.cars,state:0
+msgid "Draft"
+msgstr "مبدئي"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.cars_kanban_view
+#: model_terms:ir.ui.view,arch_db:central_workshope.maintenance_kanban_view
+msgid "Dropdown menu"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__duration
+msgid "Duration"
+msgstr "المده"
+
+#. module: central_workshope
+#: model:ir.model.fields,help:central_workshope.field_workshope_maintenance__duration
+msgid "Duration in hours and minutes."
+msgstr ""
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.cars_kanban_view
+#: model_terms:ir.ui.view,arch_db:central_workshope.maintenance_kanban_view
+msgid "Edit..."
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_employee_line__emp_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__emp_line
+msgid "Employee Name"
+msgstr "إسم المهندس"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_employee_line__last_result
+#: model_terms:ir.ui.view,arch_db:central_workshope.maintnence_form_id
+msgid "End Report"
+msgstr "التقرير النهائي"
+
+#. module: central_workshope
+#: model:ir.actions.act_window,name:central_workshope.employee_action_id
+msgid "Engineer"
+msgstr " المهندس"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__engineer_name
+msgid "Engineer Name"
+msgstr "إسم المهندس"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.kanban_workshope_employee_id
+msgid "Engineer Name :"
+msgstr "إسم المهندس"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.kanban_workshope_employee_id
+msgid "Engineer Section :"
+msgstr "القسم"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__emp_seq
+msgid "Engineer Seq"
+msgstr "المتسلسل"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__fuel_type
+msgid "Feul Type"
+msgstr "نوع الوفود"
+
+#. module: central_workshope
+#: model:ir.ui.menu,name:central_workshope.cars_model_menu_id
+msgid "Fleet"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__message_follower_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__message_follower_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__message_follower_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__message_follower_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__message_follower_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__message_follower_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__message_follower_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__message_channel_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__message_channel_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__message_channel_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__message_channel_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__message_channel_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__message_channel_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__message_channel_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__message_partner_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__message_partner_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__message_partner_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__message_partner_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__message_partner_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__message_partner_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__message_partner_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__fuel_type
+msgid "Fuel Type"
+msgstr "نوع الوقود"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.search_view_maintenance_id
+msgid "Future Activities"
+msgstr ""
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.employee_search_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.fleet_vehicle_model_view_search_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.rsf_weapon_search_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.search_view_maintenance_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.workshope_cars_search
+msgid "Group By"
+msgstr "تجميع ب"
+
+#. module: central_workshope
+#: selection:workshope.maintenance,priority:0
+msgid "High"
+msgstr "كبيره"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_employee_line__id
+#: model:ir.model.fields,field_description:central_workshope.field_fleet_vehicle_model_brand__id
+#: model:ir.model.fields,field_description:central_workshope.field_maintenance_order_line__id
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__id
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon_line__id
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars_model__id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__id
+msgid "ID"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,help:central_workshope.field_rsf_weapon__message_unread
+#: model:ir.model.fields,help:central_workshope.field_workshoe_malfunctions__message_unread
+#: model:ir.model.fields,help:central_workshope.field_workshope_cars__message_unread
+#: model:ir.model.fields,help:central_workshope.field_workshope_employee__message_unread
+#: model:ir.model.fields,help:central_workshope.field_workshope_maintenance__message_unread
+#: model:ir.model.fields,help:central_workshope.field_workshope_malfunctions_type__message_unread
+#: model:ir.model.fields,help:central_workshope.field_workshope_section__message_unread
+#: model:ir.model.fields,help:central_workshope.field_workshope_units__message_unread
+msgid "If checked new messages require your attention."
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,help:central_workshope.field_rsf_weapon__message_needaction
+#: model:ir.model.fields,help:central_workshope.field_workshoe_malfunctions__message_needaction
+#: model:ir.model.fields,help:central_workshope.field_workshope_cars__message_needaction
+#: model:ir.model.fields,help:central_workshope.field_workshope_employee__message_needaction
+#: model:ir.model.fields,help:central_workshope.field_workshope_maintenance__message_needaction
+#: model:ir.model.fields,help:central_workshope.field_workshope_malfunctions_type__message_needaction
+#: model:ir.model.fields,help:central_workshope.field_workshope_section__message_needaction
+#: model:ir.model.fields,help:central_workshope.field_workshope_units__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,help:central_workshope.field_rsf_weapon__message_has_error
+#: model:ir.model.fields,help:central_workshope.field_workshoe_malfunctions__message_has_error
+#: model:ir.model.fields,help:central_workshope.field_workshope_cars__message_has_error
+#: model:ir.model.fields,help:central_workshope.field_workshope_employee__message_has_error
+#: model:ir.model.fields,help:central_workshope.field_workshope_maintenance__message_has_error
+#: model:ir.model.fields,help:central_workshope.field_workshope_malfunctions_type__message_has_error
+#: model:ir.model.fields,help:central_workshope.field_workshope_section__message_has_error
+#: model:ir.model.fields,help:central_workshope.field_workshope_units__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__image
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__image
+msgid "Image"
+msgstr ""
+
+#. module: central_workshope
+#: selection:workshope.maintenance,state:0
+msgid "In Check"
+msgstr " الفحص"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.maintnence_form_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.search_view_maintenance_id
+#: selection:workshope.maintenance,kanban_state:0
+#: selection:workshope.maintenance,state:0
+msgid "In Progress"
+msgstr " الصيانه"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.rsf_weapon_form_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.workshope_cars_form_id
+#: selection:rsf.weapon,state:0
+#: selection:workshope.cars,state:0
+msgid "In Service"
+msgstr "في الخدمه"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.workshope_cars_search
+msgid "Insert Cars"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon_line__notes
+#: model_terms:ir.ui.view,arch_db:central_workshope.employee_form_view_id
+msgid "Internal Note"
+msgstr "مذكره داخليه"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.employee_form_view_id
+msgid "Internal Note ......"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__internal_note
+msgid "Internal Notes"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_maintenance_order_line__default_code
+msgid "Internal Referance"
+msgstr "المرجع الداخلي"
+
+#. module: central_workshope
+#: code:addons/central_workshope/models/workshope_cars.py:113
+#: code:addons/central_workshope/models/workshope_maintenance.py:82
+#, python-format
+msgid "Invalid Phone Number..."
+msgstr "خطأ في رقم الهاتف"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.maintnence_form_id
+#: selection:workshope.maintenance,state:0
+msgid "Inventory"
+msgstr "المخزن"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__message_is_follower
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__message_is_follower
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__message_is_follower
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__message_is_follower
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__message_is_follower
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__message_is_follower
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__message_is_follower
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__prodect_line
+msgid "Items"
+msgstr "قطع الغيار"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.workshope_cars_search
+#: selection:workshope.cars,fuel_type:0
+msgid "Jazz"
+msgstr "جاز"
+
+#. module: central_workshope
+#: model:ir.actions.report,name:central_workshope.job_report_data
+msgid "Job Details"
+msgstr "تفاصيل الصيانه"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__maintenance_seq
+msgid "Job ID"
+msgstr "رقم الصيانه"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__state
+msgid "Job State"
+msgstr "حاله الصيانه"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__kanban_state
+msgid "Kanban State"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_employee_line____last_update
+#: model:ir.model.fields,field_description:central_workshope.field_fleet_vehicle_model_brand____last_update
+#: model:ir.model.fields,field_description:central_workshope.field_maintenance_order_line____last_update
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon____last_update
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon_line____last_update
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions____last_update
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars____last_update
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars_model____last_update
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee____last_update
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance____last_update
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type____last_update
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section____last_update
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_employee_line__write_uid
+#: model:ir.model.fields,field_description:central_workshope.field_fleet_vehicle_model_brand__write_uid
+#: model:ir.model.fields,field_description:central_workshope.field_maintenance_order_line__write_uid
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__write_uid
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon_line__write_uid
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__write_uid
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__write_uid
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars_model__write_uid
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__write_uid
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__write_uid
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__write_uid
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__write_uid
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_employee_line__write_date
+#: model:ir.model.fields,field_description:central_workshope.field_fleet_vehicle_model_brand__write_date
+#: model:ir.model.fields,field_description:central_workshope.field_maintenance_order_line__write_date
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__write_date
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon_line__write_date
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__write_date
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__write_date
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars_model__write_date
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__write_date
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__write_date
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__write_date
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__write_date
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__location
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__location
+msgid "Location"
+msgstr "العنوان"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_fleet_vehicle_model_brand__image
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars_model__image
+msgid "Logo"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__image_medium
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars_model__image_medium
+msgid "Logo (medium)"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars_model__image_small
+msgid "Logo (small)"
+msgstr ""
+
+#. module: central_workshope
+#: selection:workshope.maintenance,priority:0
+msgid "Low"
+msgstr "متوسطه"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__machine_no
+msgid "Machine No"
+msgstr "رقم المكنه"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.cars_kanban_view
+msgid "Machine No :"
+msgstr "رقم المكنه"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.maintnence_form_id
+msgid "Mailfunctions"
+msgstr "الاعطال"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__message_main_attachment_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__message_main_attachment_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__message_main_attachment_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__message_main_attachment_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__message_main_attachment_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__message_main_attachment_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__message_main_attachment_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: central_workshope
+#: code:addons/central_workshope/models/workshope_cars.py:139
+#: model:ir.model.fields,field_description:central_workshope.field_maintenance_order_line__maintenance_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__company_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.employee_form_view_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.maintnence_form_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.workshope_cars_form_id
+#, python-format
+msgid "Maintenance"
+msgstr "الصيانه"
+
+#. module: central_workshope
+#: model:ir.model,name:central_workshope.model_workshope_maintenance
+#: model:ir.ui.menu,name:central_workshope.cars_menu_id_ids
+msgid "Maintenance "
+msgstr "الصيانه"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__maintenance_count
+msgid "Maintenance Count"
+msgstr "عدد مرات الصيانه"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__maintenance_countt
+msgid "Maintenance Countt"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.actions.act_window,name:central_workshope.in_maint_action
+msgid "Maintenance Request"
+msgstr "طلبات الصيانه"
+
+#. module: central_workshope
+#: model:ir.model,name:central_workshope.model_maintenance_order_line
+msgid "Maintenance Stage"
+msgstr "مرحله الصيانه"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__maintenance_type
+#: model_terms:ir.ui.view,arch_db:central_workshope.search_view_maintenance_id
+msgid "Maintenance Type"
+msgstr "نوع الصيانه"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_employee_line__maintenane_id
+msgid "Maintenane ID"
+msgstr "متسلسل الصيانه"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_fleet_vehicle_model_brand__name
+#: model_terms:ir.ui.view,arch_db:central_workshope.fleet_vehicle_model_view_search_id
+msgid "Make"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.ui.menu,name:central_workshope.malfunctions_menu_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.malfunctions_form_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.malfunctions_search_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.malfunctions_tree_id
+msgid "Malfunctions"
+msgstr "الأعطال"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__malfunctions_lines
+msgid "Malfunctions "
+msgstr "الاعطال"
+
+#. module: central_workshope
+#: model:ir.actions.act_window,name:central_workshope.malfunctions_action_id
+msgid "Malfunctions Action"
+msgstr "العطل"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__malfunctions_seq
+msgid "Malfunctions Seq"
+msgstr "نوع العطل"
+
+#. module: central_workshope
+#: model:ir.actions.act_window,name:central_workshope.malfunctions_type_actions_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__malfunctions_type_id
+#: model:ir.ui.menu,name:central_workshope.malfunctions_type_menu_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.malfunctions_type_form_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.malfunctions_type_search_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.malfunctions_type_tree_id
+msgid "Malfunctions Type"
+msgstr "نوع العطل"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__malfunctions_type_seq
+msgid "Malfunctions Type Seq"
+msgstr "متسلسل العطل"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.workshope_cars_search
+#: selection:workshope.cars,transmision:0
+msgid "Manueal"
+msgstr "قير"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_fleet_vehicle_model_brand__image_medium
+msgid "Medium-sized image"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,help:central_workshope.field_fleet_vehicle_model_brand__image_medium
+#: model:ir.model.fields,help:central_workshope.field_workshope_cars__image_medium
+#: model:ir.model.fields,help:central_workshope.field_workshope_cars_model__image_medium
+msgid "Medium-sized logo of the brand. It is automatically resized as a 128x128px image, with aspect ratio preserved. Use this field in form views or some kanban views."
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__message_has_error
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__message_has_error
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__message_has_error
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__message_has_error
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__message_has_error
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__message_has_error
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__message_has_error
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__message_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__message_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__message_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__message_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__message_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__message_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__message_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__model_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.fleet_vehicle_model_view_form_id
+msgid "Model"
+msgstr "الموديل"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.fleet_vehicle_model_brand_view_form_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.fleet_vehicle_model_brand_view_tree_id
+msgid "Model Make"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars_model__name
+msgid "Model Name"
+msgstr "إسم الموديل"
+
+#. module: central_workshope
+#: model:ir.actions.act_window,name:central_workshope.fleet_vehicle_model_brand_action_id
+#: model:ir.ui.menu,name:central_workshope.fleet_vehicle_model_brand_menu_id
+msgid "Model make of Vehicle"
+msgstr "موديل المركبات"
+
+#. module: central_workshope
+#: model:ir.model.fields,help:central_workshope.field_workshope_cars__model_id
+msgid "Model of the vehicle"
+msgstr "موديل المركبات"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.fleet_vehicle_model_view_tree_id
+msgid "Models"
+msgstr "الموديل"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__month
+msgid "Month"
+msgstr "الشهر"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__company_id
+msgid "My Company"
+msgstr "إسم الورشة"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.search_view_maintenance_id
+msgid "My Requests"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__name
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__name
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.kanban_rsf_section_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.kanban_rsf_units_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.kanban_rsf_weapon_id
+msgid "Name :"
+msgstr "الاسم"
+
+#. module: central_workshope
+#: code:addons/central_workshope/models/rsf_weapon.py:19
+#: code:addons/central_workshope/models/rsf_weapon.py:34
+#: code:addons/central_workshope/models/rsf_weapon.py:35
+#: code:addons/central_workshope/models/workshope_cars.py:17
+#: code:addons/central_workshope/models/workshope_cars.py:95
+#: code:addons/central_workshope/models/workshope_cars.py:96
+#: code:addons/central_workshope/models/workshope_emp.py:12
+#: code:addons/central_workshope/models/workshope_emp.py:54
+#: code:addons/central_workshope/models/workshope_emp.py:55
+#: code:addons/central_workshope/models/workshope_maintenance.py:17
+#: code:addons/central_workshope/models/workshope_maintenance.py:72
+#: code:addons/central_workshope/models/workshope_maintenance.py:73
+#: code:addons/central_workshope/models/workshope_malfunctions.py:11
+#: code:addons/central_workshope/models/workshope_malfunctions.py:29
+#: code:addons/central_workshope/models/workshope_malfunctions.py:30
+#: code:addons/central_workshope/models/workshope_malfunctions_type.py:11
+#: code:addons/central_workshope/models/workshope_malfunctions_type.py:28
+#: code:addons/central_workshope/models/workshope_malfunctions_type.py:29
+#: code:addons/central_workshope/models/workshope_section.py:11
+#: code:addons/central_workshope/models/workshope_section.py:27
+#: code:addons/central_workshope/models/workshope_section.py:28
+#: code:addons/central_workshope/models/workshope_units.py:11
+#: code:addons/central_workshope/models/workshope_units.py:27
+#: code:addons/central_workshope/models/workshope_units.py:28
+#, python-format
+msgid "New"
+msgstr "جديد"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.maintnence_form_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.search_view_maintenance_id
+#: selection:workshope.maintenance,state:0
+msgid "New Request"
+msgstr "طلب جديد"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__activity_date_deadline
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__activity_date_deadline
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__activity_date_deadline
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__activity_date_deadline
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__activity_date_deadline
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__activity_date_deadline
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__activity_date_deadline
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__activity_summary
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__activity_summary
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__activity_summary
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__activity_summary
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__activity_summary
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__activity_summary
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__activity_summary
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__activity_type_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__activity_type_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__activity_type_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__activity_type_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__activity_type_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__activity_type_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__activity_type_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: central_workshope
+#: code:addons/central_workshope/models/workshope_cars.py:103
+#, python-format
+msgid "No Plate"
+msgstr "رقم اللوحه"
+
+#. module: central_workshope
+#: selection:workshope.maintenance,priority:0
+msgid "Normal"
+msgstr "عادي"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__num_signal
+msgid "Number Sig"
+msgstr "رقم الإشارة"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__message_needaction_counter
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__message_needaction_counter
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__message_needaction_counter
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__message_needaction_counter
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__message_needaction_counter
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__message_needaction_counter
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__message_needaction_counter
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__message_has_error_counter
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__message_has_error_counter
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__message_has_error_counter
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__message_has_error_counter
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__message_has_error_counter
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__message_has_error_counter
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__message_has_error_counter
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__message_has_error_counter
+msgid "Number of error"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,help:central_workshope.field_rsf_weapon__message_needaction_counter
+#: model:ir.model.fields,help:central_workshope.field_workshoe_malfunctions__message_needaction_counter
+#: model:ir.model.fields,help:central_workshope.field_workshope_cars__message_needaction_counter
+#: model:ir.model.fields,help:central_workshope.field_workshope_employee__message_needaction_counter
+#: model:ir.model.fields,help:central_workshope.field_workshope_maintenance__message_needaction_counter
+#: model:ir.model.fields,help:central_workshope.field_workshope_malfunctions_type__message_needaction_counter
+#: model:ir.model.fields,help:central_workshope.field_workshope_section__message_needaction_counter
+#: model:ir.model.fields,help:central_workshope.field_workshope_units__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,help:central_workshope.field_rsf_weapon__message_has_error_counter
+#: model:ir.model.fields,help:central_workshope.field_workshoe_malfunctions__message_has_error_counter
+#: model:ir.model.fields,help:central_workshope.field_workshope_cars__message_has_error_counter
+#: model:ir.model.fields,help:central_workshope.field_workshope_employee__message_has_error_counter
+#: model:ir.model.fields,help:central_workshope.field_workshope_maintenance__message_has_error_counter
+#: model:ir.model.fields,help:central_workshope.field_workshope_malfunctions_type__message_has_error_counter
+#: model:ir.model.fields,help:central_workshope.field_workshope_section__message_has_error_counter
+#: model:ir.model.fields,help:central_workshope.field_workshope_units__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,help:central_workshope.field_rsf_weapon__message_unread_counter
+#: model:ir.model.fields,help:central_workshope.field_workshoe_malfunctions__message_unread_counter
+#: model:ir.model.fields,help:central_workshope.field_workshope_cars__message_unread_counter
+#: model:ir.model.fields,help:central_workshope.field_workshope_employee__message_unread_counter
+#: model:ir.model.fields,help:central_workshope.field_workshope_maintenance__message_unread_counter
+#: model:ir.model.fields,help:central_workshope.field_workshope_malfunctions_type__message_unread_counter
+#: model:ir.model.fields,help:central_workshope.field_workshope_section__message_unread_counter
+#: model:ir.model.fields,help:central_workshope.field_workshope_units__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__officcer
+msgid "Officer"
+msgstr "الضابط"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.maintnence_form_id
+msgid "Officer Dietails"
+msgstr "بيانات الضابط"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__officer
+msgid "Offiicer"
+msgstr "الضابط"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_maintenance_order_line__qty_available
+msgid "On hand"
+msgstr "المتوفر حاليا"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.fleet_vehicle_model_brand_view_kanban
+msgid "Open"
+msgstr "مفتوح"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.rsf_weapon_form_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.workshope_cars_form_id
+#: selection:rsf.weapon,state:0
+#: selection:workshope.cars,state:0
+msgid "Out Service"
+msgstr "خارج الخدمه"
+
+#. module: central_workshope
+#: selection:rsf.weapon,activity_state:0
+#: selection:workshoe.malfunctions,activity_state:0
+#: selection:workshope.cars,activity_state:0
+#: selection:workshope.employee,activity_state:0
+#: selection:workshope.maintenance,activity_state:0
+#: selection:workshope.malfunctions.type,activity_state:0
+#: selection:workshope.section,activity_state:0
+#: selection:workshope.units,activity_state:0
+msgid "Overdue"
+msgstr ""
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.workshope_cars_search
+#: selection:workshope.cars,fuel_type:0
+msgid "Petrol"
+msgstr "بنزين"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__phone
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__phone
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__phone
+msgid "Phone"
+msgstr "الهاتف"
+
+#. module: central_workshope
+#: selection:rsf.weapon,activity_state:0
+#: selection:workshoe.malfunctions,activity_state:0
+#: selection:workshope.cars,activity_state:0
+#: selection:workshope.employee,activity_state:0
+#: selection:workshope.maintenance,activity_state:0
+#: selection:workshope.malfunctions.type,activity_state:0
+#: selection:workshope.section,activity_state:0
+#: selection:workshope.units,activity_state:0
+msgid "Planned"
+msgstr ""
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.cars_kanban_view
+msgid "Plate No :"
+msgstr "رقم اللوحه"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__plate_number
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__plate_number
+msgid "Plate Number"
+msgstr "رقم اللوحه"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.maintnence_form_id
+msgid "Print Job"
+msgstr "طباعه"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__priority
+msgid "Priority"
+msgstr "الاولويه"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_maintenance_order_line__p_type
+msgid "Product Type"
+msgstr "المنتج"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_maintenance_order_line__quantity
+msgid "Quantity"
+msgstr "الكميه"
+
+#. module: central_workshope
+#: code:addons/central_workshope/models/workshope_maintenance.py:134
+#, python-format
+msgid "Quntity Must Be Greater Than 0 !!!"
+msgstr "عفوا !!! الكميه المطلوبه يجب ان تكون اكبر من الصفر"
+
+#. module: central_workshope
+#: code:addons/central_workshope/models/workshope_maintenance.py:151
+#, python-format
+msgid "Quntity discount"
+msgstr "تم صرف الكميه المطلوبه بنجاح"
+
+#. module: central_workshope
+#: code:addons/central_workshope/models/workshope_maintenance.py:136
+#, python-format
+msgid "Quntity is not Enough !!!"
+msgstr "الكميه المطلوبه غير متوفره"
+
+#. module: central_workshope
+#: code:addons/central_workshope/models/workshope_maintenance.py:153
+#, python-format
+msgid "Quntity not discount"
+msgstr "لم "
+
+#. module: central_workshope
+#: model:ir.ui.menu,name:central_workshope.rsf_weapon_menu_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.rsf_weapon_form_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.rsf_weapon_search_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.rsf_weapon_tree_id
+msgid "RSF Weapon"
+msgstr "السلاح"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__officer
+msgid "Rank"
+msgstr "الرتبه"
+
+#. module: central_workshope
+#: selection:workshope.maintenance,kanban_state:0
+msgid "Ready for next stage"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__rece_of
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__rece_of
+msgid "Rece Officer"
+msgstr "الضابط/الفرد"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.workshope_cars_form_id
+msgid "Receved Detailes"
+msgstr "بيانات المستلم"
+
+#. module: central_workshope
+#: selection:workshope.maintenance,state:0
+msgid "Repaired"
+msgstr "تمت صيانته"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.maintnence_form_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.search_view_maintenance_id
+msgid "Repired"
+msgstr "تمت صيانته"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__request_date
+msgid "Request Date"
+msgstr "تاريخ الطلب"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.cars_kanban_view
+#: model_terms:ir.ui.view,arch_db:central_workshope.maintenance_kanban_view
+msgid "Requested by :"
+msgstr "مقدم الطلب"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_employee_line__star_date
+msgid "Reseved Date"
+msgstr "تاريخ التسليم"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__activity_user_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__activity_user_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__activity_user_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__activity_user_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__activity_user_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__activity_user_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__activity_user_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤل"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__user_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__user_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__user_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__user_id
+msgid "Resposible"
+msgstr "المسؤل"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__scheduled_Date
+msgid "Scheduled Date"
+msgstr ""
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.maintnence_form_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.rsf_weapon_form_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.search_view_maintenance_id
+#: selection:rsf.weapon,state:0
+#: selection:workshope.maintenance,state:0
+msgid "Scrap"
+msgstr "خردة"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_employee_line__section_id
+msgid "Section"
+msgstr "القسم"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.employee_search_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.section_form_view_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.section_tree_view_id
+msgid "Section Type"
+msgstr "القسم"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.kanban_rsf_section_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.kanban_rsf_units_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.kanban_rsf_weapon_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.kanban_workshope_employee_id
+msgid "Sequence :"
+msgstr "المتسلسل"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_fleet_vehicle_model_brand__image_small
+msgid "Small-sized image"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,help:central_workshope.field_fleet_vehicle_model_brand__image_small
+#: model:ir.model.fields,help:central_workshope.field_workshope_cars_model__image_small
+msgid "Small-sized logo of the brand. It is automatically resized as a 64x64px image, with aspect ratio preserved. Use this field anywhere a small image is required."
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_maintenance_order_line__product_id
+msgid "Spare Name"
+msgstr "اسم القطع"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.maintnence_form_id
+msgid "Spare Parts"
+msgstr "قطع الغيار"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__state
+msgid "State"
+msgstr "الحاله"
+
+#. module: central_workshope
+#: model:ir.model.fields,help:central_workshope.field_rsf_weapon__activity_state
+#: model:ir.model.fields,help:central_workshope.field_workshoe_malfunctions__activity_state
+#: model:ir.model.fields,help:central_workshope.field_workshope_cars__activity_state
+#: model:ir.model.fields,help:central_workshope.field_workshope_employee__activity_state
+#: model:ir.model.fields,help:central_workshope.field_workshope_maintenance__activity_state
+#: model:ir.model.fields,help:central_workshope.field_workshope_malfunctions_type__activity_state
+#: model:ir.model.fields,help:central_workshope.field_workshope_section__activity_state
+#: model:ir.model.fields,help:central_workshope.field_workshope_units__activity_state
+msgid "Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: central_workshope
+#: selection:workshope.maintenance,maintenance_type:0
+msgid "Syclic"
+msgstr "دورية"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon_line__the_number
+msgid "The number"
+msgstr "العدد"
+
+#. module: central_workshope
+#: sql_constraint:workshoe.malfunctions:0
+#: sql_constraint:workshope.malfunctions.type:0
+#: sql_constraint:workshope.section:0
+#: sql_constraint:workshope.units:0
+msgid "This Name Is Existed"
+msgstr "هذا الاسم موجود بالفعل"
+
+#. module: central_workshope
+#: model:ir.model.fields,help:central_workshope.field_fleet_vehicle_model_brand__image
+#: model:ir.model.fields,help:central_workshope.field_workshope_cars_model__image
+msgid "This field holds the image used as logo for the brand, limited to 1024x1024px."
+msgstr ""
+
+#. module: central_workshope
+#: selection:rsf.weapon,activity_state:0
+#: selection:workshoe.malfunctions,activity_state:0
+#: selection:workshope.cars,activity_state:0
+#: selection:workshope.employee,activity_state:0
+#: selection:workshope.maintenance,activity_state:0
+#: selection:workshope.malfunctions.type,activity_state:0
+#: selection:workshope.section,activity_state:0
+#: selection:workshope.units,activity_state:0
+msgid "Today"
+msgstr "اليوم"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.search_view_maintenance_id
+msgid "Today Activities"
+msgstr "النشاط اليومي"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__transmision
+msgid "Transmision"
+msgstr "الناقل"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__transmision
+msgid "Transnision"
+msgstr "الناقل"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon_line__w_type
+msgid "Type"
+msgstr "النوع"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.kanban_rsf_weapon_id
+msgid "Type :"
+msgstr "النوع"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__units_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__units_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__units_id
+msgid "Units"
+msgstr "الوحدات"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__message_unread
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__message_unread
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__message_unread
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__message_unread
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__message_unread
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__message_unread
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__message_unread
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__message_unread
+#: model_terms:ir.ui.view,arch_db:central_workshope.maintenance_kanban_view
+#: model_terms:ir.ui.view,arch_db:central_workshope.search_view_maintenance_id
+msgid "Unread Messages"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__message_unread_counter
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__message_unread_counter
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__message_unread_counter
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__message_unread_counter
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__message_unread_counter
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__message_unread_counter
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__message_unread_counter
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.search_view_maintenance_id
+msgid "Unscheduled Maintenance"
+msgstr "غير مجدول"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__user_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__user_id
+msgid "User"
+msgstr "المستخدم"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.maintnence_form_id
+msgid "Validation"
+msgstr "تحقق"
+
+#. module: central_workshope
+#: model:ir.ui.menu,name:central_workshope.menu_car_root
+msgid "Vehicles"
+msgstr "المركبات"
+
+#. module: central_workshope
+#: model:ir.actions.act_window,name:central_workshope.fleet_vehicle_model_action_id
+msgid "Vehicles Model"
+msgstr "موديل المركبه"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.fleet_vehicle_model_view_search_id
+msgid "Vehicles costs"
+msgstr ""
+
+#. module: central_workshope
+#: selection:workshope.maintenance,priority:0
+msgid "Very Low"
+msgstr "عادية"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.maintnence_form_id
+#: selection:workshope.maintenance,state:0
+msgid "Wait Confirm"
+msgstr "إنتظار التصديق"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__warrant_officer
+msgid "Warrant Officcer"
+msgstr "ضابط صف/جندي"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__warrant_officcer
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__warrant_officer
+msgid "Warrant Officer"
+msgstr "ضابط صف/جندي"
+
+#. module: central_workshope
+#: model:ir.actions.act_window,name:central_workshope.ref_weapon_action_id
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__weapon_line_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.workshope_cars_form_id
+msgid "Weapon"
+msgstr "الاسلحه"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__name
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon_line__weapon_name
+msgid "Weapon Name"
+msgstr "إسم السلاح"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__weapon_no
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon_line__weapon_no
+msgid "Weapon No"
+msgstr "رقم السلاح"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.kanban_rsf_weapon_id
+msgid "Weapon No :"
+msgstr "رقم السلاح"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__weapon_seq
+msgid "Weapon Seq"
+msgstr "متسلسل السلاح"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__state
+msgid "Weapon State"
+msgstr "حاله السلاح"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__weapon_type
+#: model_terms:ir.ui.view,arch_db:central_workshope.rsf_weapon_search_id
+msgid "Weapon Type"
+msgstr "نوع السلاح"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_rsf_weapon__website_message_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshoe_malfunctions__website_message_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__website_message_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_employee__website_message_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__website_message_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_malfunctions_type__website_message_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_section__website_message_ids
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,help:central_workshope.field_rsf_weapon__website_message_ids
+#: model:ir.model.fields,help:central_workshope.field_workshoe_malfunctions__website_message_ids
+#: model:ir.model.fields,help:central_workshope.field_workshope_cars__website_message_ids
+#: model:ir.model.fields,help:central_workshope.field_workshope_employee__website_message_ids
+#: model:ir.model.fields,help:central_workshope.field_workshope_maintenance__website_message_ids
+#: model:ir.model.fields,help:central_workshope.field_workshope_malfunctions_type__website_message_ids
+#: model:ir.model.fields,help:central_workshope.field_workshope_section__website_message_ids
+#: model:ir.model.fields,help:central_workshope.field_workshope_units__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_cars__whay_out
+#: model_terms:ir.ui.view,arch_db:central_workshope.workshope_cars_form_id
+msgid "Whay Out Service"
+msgstr "سبب الخروج عن الخدمه"
+
+#. module: central_workshope
+#: model:ir.ui.menu,name:central_workshope.employee_menu_id
+msgid "Workshope Engineer"
+msgstr "المهندسين"
+
+#. module: central_workshope
+#: model:ir.ui.menu,name:central_workshope.section_menu_id
+msgid "Workshope Section"
+msgstr "القسم"
+
+#. module: central_workshope
+#: model:ir.ui.menu,name:central_workshope.units_menu_id
+msgid "Workshope units"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_maintenance__year
+msgid "Year"
+msgstr "السنه"
+
+#. module: central_workshope
+#: model_terms:ir.actions.act_window,help:central_workshope.fleet_vehicle_model_action_id
+msgid "You can define several models (e.g. A3, A4) for each make (Audi)."
+msgstr ""
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.maintnence_search_view
+msgid "by"
+msgstr "عن"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.fleet_vehicle_model_view_form_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.workshope_cars_form_id
+msgid "e.g. Model S"
+msgstr ""
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.workshope_cars_form_id
+msgid "e.g. PAE 326"
+msgstr ""
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.fleet_vehicle_model_view_form_id
+msgid "e.g. Tesla"
+msgstr ""
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.employee_form_view_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.employee_tree_view_id
+msgid "employee Type"
+msgstr "المهندسين"
+
+#. module: central_workshope
+#: model:ir.model,name:central_workshope.model_employee_line
+msgid "employee.line"
+msgstr "المهندسين"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.search_view_maintenance_id
+msgid "maintenance Request Search"
+msgstr "طلبات الصيانه"
+
+#. module: central_workshope
+#: model:ir.model,name:central_workshope.model_rsf_weapon
+msgid "rsf weapon"
+msgstr "الاسلحه"
+
+#. module: central_workshope
+#: model:ir.model,name:central_workshope.model_rsf_weapon_line
+msgid "rsf.weapon.line"
+msgstr "الاسلحه"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.job_report
+msgid "this is for test"
+msgstr ""
+
+#. module: central_workshope
+#: model:ir.actions.act_window,name:central_workshope.units_action_id
+msgid "units Action"
+msgstr "الوحده"
+
+#. module: central_workshope
+#: model:ir.model.fields,field_description:central_workshope.field_workshope_units__units_seq
+msgid "units Seq"
+msgstr "متسلسل الوحده"
+
+#. module: central_workshope
+#: model_terms:ir.ui.view,arch_db:central_workshope.units_form_view_id
+#: model_terms:ir.ui.view,arch_db:central_workshope.units_tree_view_id
+msgid "units Type"
+msgstr "الوحده"
+
+#. module: central_workshope
+#: model:ir.model,name:central_workshope.model_workshope_cars_model
+msgid "workshope.cars.model"
+msgstr "المركبات"
+
+#. module: central_workshope
+#: model:ir.model,name:central_workshope.model_workshope_report_root
+msgid "workshope.report.root"
+msgstr "الورشة المركزية"
+
+#. module: central_workshope
+#: code:addons/central_workshope/models/workshope_cars.py:127
+#, python-format
+msgid "الرجاء ارفاق 12 س للمركبة"
+msgstr "الرجاء ارفاق 12 س للمركبة"
+
+#. module: central_workshope
+#: selection:workshope.cars,warrant_officer:0
+#: selection:workshope.employee,warrant_officcer:0
+msgid "جندي"
+msgstr "جندي"
+
+#. module: central_workshope
+#: selection:workshope.cars,warrant_officer:0
+#: selection:workshope.employee,warrant_officcer:0
+msgid "ر.أول"
+msgstr "ر.أول"
+
+#. module: central_workshope
+#: selection:workshope.cars,officer:0
+#: selection:workshope.employee,officcer:0
+msgid "رائد"
+msgstr "رائد"
+
+#. module: central_workshope
+#: selection:workshope.cars,warrant_officer:0
+#: selection:workshope.employee,warrant_officcer:0
+msgid "رقيب"
+msgstr "رقيب"
+
+#. module: central_workshope
+#: selection:workshope.cars,category:0
+#: selection:workshope.employee,catt:0
+msgid "ضابط"
+msgstr "ضابط"
+
+#. module: central_workshope
+#: selection:workshope.cars,category:0
+#: selection:workshope.employee,catt:0
+msgid "ضابط صف/جندي"
+msgstr "ضابط صف/جندي"
+
+#. module: central_workshope
+#: selection:workshope.cars,warrant_officer:0
+#: selection:workshope.employee,warrant_officcer:0
+msgid "عريف"
+msgstr "عريف"
+
+#. module: central_workshope
+#: selection:workshope.cars,officer:0
+#: selection:workshope.employee,officcer:0
+msgid "عقيد"
+msgstr "عقيد"
+
+#. module: central_workshope
+#: selection:workshope.cars,officer:0
+#: selection:workshope.employee,officcer:0
+msgid "عميد"
+msgstr "عميد"
+
+#. module: central_workshope
+#: selection:workshope.cars,officer:0
+#: selection:workshope.employee,officcer:0
+msgid "فريق"
+msgstr "فريق"
+
+#. module: central_workshope
+#: selection:workshope.cars,officer:0
+#: selection:workshope.employee,officcer:0
+msgid "فريق اول"
+msgstr "فريق اول"
+
+#. module: central_workshope
+#: selection:workshope.cars,officer:0
+#: selection:workshope.employee,officcer:0
+msgid "لواء"
+msgstr "لواء"
+
+#. module: central_workshope
+#: selection:workshope.cars,officer:0
+#: selection:workshope.employee,officcer:0
+msgid "م.أول"
+msgstr "م.أول"
+
+#. module: central_workshope
+#: selection:workshope.cars,warrant_officer:0
+#: selection:workshope.employee,warrant_officcer:0
+msgid "متعاقد"
+msgstr "متعاقد"
+
+#. module: central_workshope
+#: selection:workshope.cars,warrant_officer:0
+#: selection:workshope.employee,warrant_officcer:0
+msgid "مساعد"
+msgstr "مساعد"
+
+#. module: central_workshope
+#: selection:workshope.cars,officer:0
+#: selection:workshope.employee,officcer:0
+msgid "مقدم"
+msgstr "مقدم"
+
+#. module: central_workshope
+#: selection:workshope.cars,officer:0
+#: selection:workshope.employee,officcer:0
+msgid "ملازم"
+msgstr "ملاذم"
+
+#. module: central_workshope
+#: selection:workshope.cars,officer:0
+#: selection:workshope.employee,officcer:0
+msgid "نقيب"
+msgstr "نقيب"
+
+#. module: central_workshope
+#: selection:workshope.cars,warrant_officer:0
+#: selection:workshope.employee,warrant_officcer:0
+msgid "و.عريف"
+msgstr "و.عريف"
+

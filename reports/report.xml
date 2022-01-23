@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Start Code Print Job -->
+            <report
+                id="job_report_data"
+                model="workshope.maintenance"
+                string="Job Details"
+                report_type="qweb-pdf"
+                name="Central_Workshop.job_report"
+                file="Central_Workshop.job_report"
+                menu="False"
+            />
+        <!-- End Code Print Job -->
+    
+        <!-- Start Code finish Job -->
+            <report
+                id="report_finish_job"
+                model="workshope.maintenance"
+                string="Finish Job"
+                report_type="qweb-html"
+                name="Central_Workshop.finish_job"
+                file="Central_Workshop.finish_job"
+            />
+        <!-- Start Code finish Job -->
+
+
+        <!-- Start Code Inventory Print -->
+            <report
+                id="report_in_inventory" 
+                model="workshope.maintenance"
+                string="inventory Esper"
+                report_type="qweb-html"
+                name="Central_Workshop.print_inventory"
+                file="Central_Workshop.print_inventory"
+            />
+        <!-- Start Code Inventory Print -->
+ 
+        <!-- Start Code between to date -->
+            <report
+                id="print_between_to_date" 
+                model="wizard.between.to.date"
+                string="Report Between To Date"
+                report_type="qweb-html"
+                name="Central_Workshop.print_between"
+                file="Central_Workshop.print_between"
+            />
+        <!-- end Code between to date -->
+
+
+        <!-- Start Code Move Product -->
+            <report
+                id="send_data_move_product" 
+                model="wizard.move.product"
+                string="Move Product"
+                report_type="qweb-html"
+                name="Central_Workshop.print_move_por"
+                file="Central_Workshop.print_move_por"
+            />
+        <!-- end Code Move Product -->
+
+        <!-- Start Code Product export import -->
+            <report
+                id="print_export_import" 
+                model="wizard.export.import"
+                string="Product Export Import"
+                report_type="qweb-html"
+                name="Central_Workshop.product_export_import"
+                file="Central_Workshop.product_export_import"
+            />
+        <!-- End Code Product export import -->
+
+        <!-- Start Code report request supply -->
+            <report
+                id="print_request_supply" 
+                model="request.supply"
+                string="Report Request Supply"
+                report_type="qweb-html"
+                name="Central_Workshop.report_request_supply"
+                file="Central_Workshop.report_request_supply"
+            />
+        <!-- End Code Product export import -->
+         
+    </data>
+</odoo>

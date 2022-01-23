@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>  
+
+    <!-- <record model="ir.ui.view" id="workshope_canban_view">
+        <field name="name">workshope maintenance</field>
+        <field name="model">res.company</field>
+        <field name="arch" type="xml">
+            <kanban >
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_content">
+                              
+                            Start My code 
+                            <div class="main-section">
+                                <div class="dashbord">
+                                    <div class="icon-section">
+                                        <i class="fa fa-cogs"></i><br />
+                                        <strong class="style_name_company"><field name="name"/></strong>
+                                        <p></p>
+
+                                        Start code smart button  Count Main Month
+                                        <button name=""  type="action" class="info mi_style_button" icon="fa-usd">
+                                            <field name=""  widget="statinfo" />
+                                        </button>
+                                    </div>
+
+                                    <div class="detail-section">
+                                        More Info 
+                                    </div>
+                                </div>
+                            </div>
+                            End My Code  
+                
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+  -->
+  
+    <record id="work_main_dash_action" model="ir.actions.act_window"> 
+        <field name="name">Dashboard</field>
+        <field name="res_model">res.company</field>
+       <field name="view_type">form</field>
+        <field name="view_mode">kanban</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Dashboard </p>
+        </field>
+    </record>
+
+    <!-- <templates id="template" xml:space="preserve">
+        <t t-name="Dashboard">
+            <div class="oh_dashboards">
+                <div class="container-fluid o_pos_dashboard">
+                    <h1> Hello Dashboard </h1>
+                </div>
+            </div>
+        </t>
+    </templates> -->
+
+</odoo> 

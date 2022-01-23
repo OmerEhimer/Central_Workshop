@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    
+        <!-- sequience for cars -->
+        <record id="seq_cars_id" model="ir.sequence">
+            <field name="name"> Cars </field>
+            <field name="code">workshope.cars.sequence</field>
+            <field name="prefix">C</field>
+            <field name="padding">6</field>
+            <field name="company_id" eval="False"/>
+        </record> 
+
+       <!-- sequience for Malfunctions Type -->
+        <record id="seq_malfunction_type_id" model="ir.sequence">
+            <field name="name">Malfunctions Type</field>
+            <field name="code">workshope.malfunctions.type.sequence</field>
+            <field name="prefix">MT</field>
+            <field name="padding">6</field>
+            <field name="company_id" eval="False"/>
+        </record> 
+
+        <!-- sequience for Malfunctions -->
+        <record id="seq_malfunction_id" model="ir.sequence">
+            <field name="name">Malfunctions</field>
+            <field name="code">workshope.malfunctions.sequence</field>
+            <field name="prefix">M</field>
+            <field name="padding">6</field>
+            <field name="company_id" eval="False"/>
+        </record> 
+
+        <!-- sequience for Section type -->
+        <record id="seq_section_id" model="ir.sequence">
+            <field name="name">Section</field>
+            <field name="code">workshope.section.sequence</field>
+            <field name="prefix">S</field>
+            <field name="padding">6</field>
+            <field name="company_id" eval="False"/>
+        </record> 
+
+        <!-- sequience for Units type -->
+        <record id="seq_units_id" model="ir.sequence">
+            <field name="name">Units</field>
+            <field name="code">workshope.units.sequence</field>
+            <field name="prefix">U</field>
+            <field name="padding">6</field>
+            <field name="company_id" eval="False"/>
+        </record> 
+
+        <!-- sequience for Employee type -->
+        <record id="seq_employee_id" model="ir.sequence">
+            <field name="name">Employee</field>
+            <field name="code">workshope.employee.sequence</field>
+            <field name="prefix">EM</field>
+            <field name="padding">6</field>
+            <field name="company_id" eval="False"/>
+        </record> 
+
+        <!-- sequience for maintenance-->
+        <record id="seq_maintenance_id" model="ir.sequence">
+            <field name="name">Employee</field>
+            <field name="code">workshope.maintenance.sequence</field>
+            <field name="prefix">M</field>
+            <field name="padding">6</field>
+            <field name="company_id" eval="False"/>
+        </record> 
+
+        <!-- sequience for rsf - weapon -->
+        <record id="seq_rsf_weapon_id" model="ir.sequence">
+            <field name="name">Weapon</field>
+            <field name="code">rsf.weapon.sequence</field>
+            <field name="prefix">W</field>
+            <field name="padding">6</field>
+            <field name="company_id" eval="False"/>
+        </record> 
+
+        <!-- sequience for rsf - weapon -->
+        <record id="seq_request_to_supply" model="ir.sequence">
+            <field name="name">Request To Supply</field>
+            <field name="code">request.supply.sequence</field>
+            <field name="prefix">REQ</field>
+            <field name="padding">6</field>
+            <field name="company_id" eval="False"/>
+        </record> 
+    </data>
+
+</odoo>

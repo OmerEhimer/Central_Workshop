@@ -1,0 +1,24 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_workshope_cars,access.workshope.cars,model_workshope_cars,,1,1,1,1
+access_workshope_cars_model,access.workshope.cars.model,model_workshope_cars_model,,1,1,1,1
+access_workshope_employee,access.workshope.employee,model_workshope_employee,,1,1,1,1
+access_fleet_vehicle_model_brand,access.fleet.vehicle.model.brand,model_fleet_vehicle_model_brand,,1,1,1,1
+access_workshope_section,access.workshope.section,model_workshope_section,,1,1,1,1
+access_workshope_units,access.workshope.units,model_workshope_units,,1,1,1,1
+access_workshope_maintenance,access.workshope.maintenance,model_workshope_maintenance,,1,1,1,1
+access_workshpe_malfunctions,access.workshoe.malfunctions,model_workshoe_malfunctions,,1,1,1,1
+access_workshope_malfunctions_type,access.workshope.malfunctions.type,model_workshope_malfunctions_type,,1,1,1,1
+access_employee_line,access.employee.line,model_employee_line,,1,1,1,1
+access_maintenance_order_line,access.maintenance.order.line,model_maintenance_order_line,,1,1,1,1
+access_rsf_weapon,access.rsf.weapon,model_rsf_weapon,,1,1,1,1
+access_rsf_weapon_line,access.rsf.weapon.line,model_rsf_weapon_line,,1,1,1,1
+access_request_supply,access.request.supply,model_request_supply,,1,1,1,1
+access_request_order_line,access.request.order.line,model_request_order_line,,1,1,1,1
+
+
+access_request_supply_user,access request supply user,model_request_supply,group_user,0,0,0,0
+
+
+
+
+

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- form view for workshope request to supply items  -->
+    <record id="form_request_to_supply_items" model="ir.ui.view">
+        <field name="name">Request To Supply Items</field>
+        <field name="model">request.supply</field>
+        <field name="arch" type="xml">
+            <form string="Request To Supply Items">
+                <header>
+                    <button name="draft" type="object" string="Draft" class="oe_highlight" states="draft"/> 
+                    <button name="confirm" type="object" string="Confirm" class="oe_highlight" states="confirm"/>
+                    <button name="approve" type="object" groups="Central_Workshop.group_admin" string="Aapprove" class="oe_highlight" states="approve"/>
+                    <button name="check_availability" type="object" string="Check Availability" groups="Central_Workshop.group_admin" class="oe_highlight" states="check_availability"/>
+                <field name="state" widget="statusbar" />
+                </header>
+
+                <sheet>
+                    <group>
+                        <group>
+                            <div class="oe_title">
+                                <h2>
+                                    <field name="req_seq" />
+                                </h2>
+                            </div>         
+       
+                            <field name="request_date" attrs="{'readonly':[('state', '=', 'done')]}" readonly="1"/>
+
+                            <field name="source_location" groups="Central_Workshop.group_admin" attrs="{'readonly':[('state', '=', 'done')] , 'required':[('state','=','check_availability')]}"/>
+  
+                            <field name="destination_location"  attrs="{'readonly':[('state', '=', 'done')]}"/>
+
+                            <field name="company_id" attrs="{'readonly':[('state', '=', 'done')]}"/>
+                            
+                        </group>
+                           
+                    </group>
+                    <notebook>
+                        <page string="Request To Supply Items">
+                            <field name="prodect_line" context="{'location' : source_location }">
+                                <tree editable="button">
+                                    <field name="product_id" />
+                                    <field name="product_uom_id" />
+                                    <field name="quantity" />
+                                    <field name="qty_available" groups="Central_Workshop.group_admin"/>
+                                    <field name="done_quantity" groups="Central_Workshop.group_admin" />
+                                    <field name="req_supp_id" invisible="1" />
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Notes">
+                            <field name="internal_note" placeholder="Internal Note ......" />
+                        </page>
+                    </notebook>	
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers" />
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread" />
+                </div>
+            </form>
+        </field>
+    </record>
+
+
+    <!-- tree view for workshope request supply  -->
+    <record id="request_supply_tree_view_id" model="ir.ui.view">
+        <field name="name">request supply</field>
+        <field name="model">request.supply</field>
+        <field name="arch" type="xml">
+            <tree string="request supply">
+                <field name="req_seq" />
+                <field name="destination_location" />
+                <field name="request_date" />
+                <field name="state" />
+            </tree>
+        </field>
+    </record>
+
+    <!-- action view for workshope request supply  -->
+    <record id="request_supply_action" model="ir.actions.act_window">
+        <field name="name">Request Supply</field>
+        <field name="res_model">request.supply</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new Request Supply !
+                </p>
+            </field>
+    </record>
+
+    <!-- search view for workshope request supply -->
+    <record id="request_supply_search" model="ir.ui.view">
+        <field name="name">Request Supply </field>
+        <field name="model">request.supply</field>
+        <field name="arch" type="xml">
+            <search string="">
+                <field name="req_seq" />
+                <field name="destination_location" />
+                <filter string="Check Availability" name="check_availability" domain="[('state','=','check_availability')]"/>
+            </search>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="wizard_between_to_date" model="ir.ui.view">
+        <field name="name">Wizard Between To Date</field>
+        <field name="model">wizard.between.to.date</field>
+        <field name="arch" type="xml">
+            <form string="create first Wizard">
+                <group>
+                    <group>
+                         <field name="company_id"/>
+                    </group>
+                    <group>
+                        <field name="start_date"/>
+                        <field name="end_date"/>
+                    </group>
+                </group>
+                <footer>
+                    <button name="print_report_between" string="Print" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="oe_link" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_wizard_between_to_date" model="ir.actions.act_window">
+        <field name="name">Wizard Between To Date</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">wizard.between.to.date</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="wizard_between_to_date"/>
+        <field name="target">new</field>       
+    </record>
+</odoo>

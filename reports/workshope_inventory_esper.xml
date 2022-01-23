@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="print_inventory">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <div class="page" style="font-size: 24px;font-family:KacstOffice,KacstOne;">
+                    <table cellpadding="5" border="0" width="90%" align="center" dir="rtl" style="font-size: 20px;">
+                        <t t-foreach="docs" t-as="o">
+                            <table cellpadding="5" border="0" width="90%" align="center" dir="rtl" style="font-size: 20px;">
+                                <tr><td><br /></td></tr>
+                                <tr>
+                                    <td width="75%" style="font-size:24px; padding:10px;" align="right">
+                                        <table width="100%" cellpadding="7" border="0">
+                                            <tr><td width="100%"><center> <h2><b> قـــوات الــدعـم الســـريـع  </b></h2></center> </td></tr>
+                                            <tr><td width="100%"><center> <h3><b>  إشعـــار صـــرف الاسبــير  </b></h3></center> </td></tr>
+                                            <tr><td width="100%" style="border-bottom:1px solid #d6d4d4; padding-top:7px;"><b>  مخــزن : </b><t t-esc="o['company_id'].name"/></td></tr>
+                                            <tr><td width="100%" style="border-bottom:1px solid #d6d4d4; padding-top:7px;"><b> رقــــم الجـــوب :  </b> <t t-esc="o['maintenance_seq']"/></td></tr>
+                                            <tr><td width="100%" style="border-bottom:1px solid #d6d4d4; padding-top:7px;"><b>  رقــم الاشــارة  : </b>  <t t-esc="o['num_signal']"/> </td></tr>
+                                            <tr><td width="100%" style="border-bottom:1px solid #d6d4d4; padding-top:7px;"><b>نـــــوع السيـــارة :  </b> <t t-esc="o['car_type']"/></td> </tr>
+                                            <tr><td width="100%" style="border-bottom:1px solid #d6d4d4; padding-top:7px;"><b>رقــم اللوحــة  : </b> <t t-esc="o['plate_number']"/>  </td></tr>
+                                            <tr><td width="100%" style="border-bottom:1px solid #d6d4d4; padding-top:7px;"><b>رقـــم الشاســــي : </b>  <span t-field="o.chassis_id.chassis"/></td></tr>
+                                            <tr><td width="100%" style="border-bottom:1px solid #d6d4d4; padding-top:7px;"><b>  أســم العـميــل : </b>  <t t-esc="o['rece_of']"/></td></tr>
+                                            <tr><td width="100%" style="border-bottom:1px solid #d6d4d4; padding-top:7px;"><b>  تاريخ الجــوب   : </b>  <t t-esc="o['request_date']"/> </td></tr>                                        </table>        
+                                    
+                                    </td>
+                                    <td width="25%" valign="bottom" align="center">
+                                        <br /><br /><br />
+                                        <img class="img img-responsive" src="/Central_Workshop/static/description/icon.png" style="width:100%;" />
+                                    </td>
+                                </tr>                          
+                            </table> 
+
+                            <!-- بداية كود الاسبيرات -->
+                            <t t-if="o.prodect_line">
+                                <table border="0" cellpadding="2" dir="rtl" width="90%" align="center">
+                                    <tr><td><p></p></td></tr> 
+                                    <tr><td colspan="3" align="right"><b>الاسبيرات : </b></td></tr>
+                                    <tr><td></td></tr>
+                                    <tr>
+                                        <td width="20%" style="background-color: #666; color: #FFF; border-radius: 1px;" align="center"> <b> متسلســـل </b></td>
+                                        <td width="40%" style="background-color: #666; color: #FFF; border-radius: 1px;" align="center"> <b> الصـــنف </b></td>
+                                        <td width="40%" style="background-color: #666; color: #FFF; border-radius: 1px;" align="center"> <b> الكـــميــــة </b></td>
+                                    </tr>
+
+                                    <t t-set="i" t-value="1" />
+                                    <t t-foreach="o.prodect_line" t-as="pro">
+
+                                        <tr style="padding:5px;">
+                                            <td width="10%" align="center">
+                                                <t t-esc="i" />
+                                                <t t-set="i" t-value="i+1"/> 
+                                            </td>
+                                            <td width="50%" align="right"><t t-esc="pro['product_id'].name"/></td>
+                                            <td width="40%" align="center"><t t-esc="pro['quantity']"/></td>
+                                        </tr>
+                                        <tr><td colspan="3" style="border-bottom:1px #8c8c8c solid;"></td></tr>                                    
+                                    </t>    
+                                </table> 
+                            </t>
+                            <t t-else=""> 
+                            </t>      
+                            <!-- نهاية كود الاسبيرات -->     
+
+                            <tr><td><br /></td></tr> 
+                            <table width="90%" dir="rtl" align="center" cellpadding="5" border="0">
+                                <tr><td width="50%" align="right"><b>أسم المستخدم :  </b> <span t-esc="request.env.user.name"/></td>
+                                <td width="50%" align="left"><b>تاريخ الصــرف  : </b> <span t-esc="time.strftime('%Y-%m-%d %H:%M:%S')"/>  </td></tr>
+                            </table> 
+                            <tr><td><br /></td></tr>                                     
+                        </t>
+                    </table>
+                </div>
+            </t>  
+        </t>
+    </template>
+</odoo>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- search view for maintenance -->
+    <record id="search_view_maintenance_id" model="ir.ui.view">
+        <field name="name"> Maintenance </field>
+        <field name="model">workshope.maintenance</field>
+        <field name="arch" type="xml">
+            <search string="maintenance Request Search">
+                <field name="num_signal"/>
+                <field name="chassis_id"/>
+                <field name="user_id"/>
+                <field name="plate_number"/>
+                <field name="rece_of"/>
+                <field name="phone"/>
+                <filter string="طلبات الصيانه" name="my_requests" domain="[('user_id', '=', uid)]"/>
+                <separator/>
+                <filter string="طلب جديد" name="new_request" domain="[('state', '=', 'new_request')]"/>
+                <filter string="في الصيانه" name="progress" domain="[('state', '=', 'normal')]"/>
+                <filter string="تمت الصيانه" name="repaired" domain="[('state', '=', 'repaired')]"/>
+                <filter string="خرده" name="scrap" domain="[('state', '=', 'scrap')]"/>
+                <separator/>
+                <filter string="Unscheduled Maintenance" domain="[('schedule_date', '=', False)]" name="unscheduled"/>
+                <filter string="Today Activities" name="activities_today"
+                    domain="[('activity_ids.date_deadline', '=', context_today().strftime('%Y-%m-%d'))]"/>
+                <filter string="Future Activities" name="activities_upcoming_all"
+                        domain="[('activity_ids.date_deadline', '&gt;', context_today().strftime('%Y-%m-%d'))
+                        ]"/>
+                <separator/>
+                <filter string="Unread Messages" name="message_needaction" domain="[('message_needaction','=',True)]"/>
+                <separator/>
+                <group expand="0" string="Group By">
+                        <filter string=" نوع الصانه" name="maintenance_type" context="{'group_by':'maintenance_type'}"/>
+                        <filter string="نوع المركبه " name="car_type" context="{'group_by':'car_type'}"/>
+                    </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- form view for workshope maintnence -->
+    <record id="maintnence_form_id" model="ir.ui.view">
+        <field name="name">Maintenance Request</field>
+        <field name="model">workshope.maintenance</field>
+        <field name="arch" type="xml">
+            <form>
+                <header> 
+                <button name="print_job" type="object" string="طباعه الجوب" class="oe_highlight" states="new_request"/>                          
+                <button name="print_finish_job" type="object" string="تقرير نهاية الصيانة" class="oe_highlight" states="repaired"/>  
+                <button name="print_in_inventory" type="object" string="إشعار صــرف الاسبيــر" class="oe_highlight" states="inventory,in_progress"/>  
+
+
+                <button name="wait_confirm" type="object" string="إنتظار التصديق"  class="oe_highlight" states="in_check"/> 
+                <button name="confirm" type="object" string="تم التصديق" class="oe_highlight" states="wait_confirm"/>
+                <button name="inventory" type="object" string="في المخزن" class="oe_highlight" states="confirmation"/>
+                <button name="repaired" type="object" string="تمت الصيانه" class="oe_highlight" states="in_check,in_progress"/>
+                <button name="back_one" type="object" string="طلب جديد " class="oe_highlight" states="in_progress,confirmation"/>
+                <button name="scrap" type="object" string="خرده" class="oe_highlight" states="in_check,repaired"/>  
+                <button name="back_tow" type="object" string="في الصيانه " class="oe_highlight" states="in_check,inventory,repaired"/>
+                <button name="new_request" type="object" string="مبدئي" class="oe_highlight" states="scrap"/>
+
+                <button name="sale_validation" type="object" string="Validation" class="oe_highlight" states="inventory"/>
+                <button name="compute_drug_sale" type="object" string="Delivery" class="oe_highlight" states="inventory"/>
+                <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h2>
+                            <field name="maintenance_seq" />
+                        </h2>
+                        <h3>
+                            <label for="num_signal"/>
+                            <field name="num_signal" attrs="{'readonly':[('state', '!=', 'new_request')]}"/>
+                        </h3>
+                    </div>
+
+                    <group>
+                        <group string="بيانات المركبه ">
+                            <field name="chassis_id" options="{'no_create': True}"
+                                attrs="{'readonly':[('state', '!=', 'new_request')]}"/>
+                            <field name="plate_number"/>
+                            <field name="transmision" />
+                            <field name="fuel_type" />
+                            <field name="car_type"/>
+                        </group>
+                        <group string="بيانات المستلم "> 
+                            <field name="rece_of" options="{'no_open': True, 'no_create': True}"/>
+                            <field name="units_id" options="{'no_open': True, 'no_create': True}"/>
+                            <field name="phone"/>
+                            <field name="category" />
+                            <field name="officer" attrs="{'invisible':[('category', '!=', '1')]}"/>
+                            <field name="warrant_officer" attrs="{'invisible':[('state', '!=', '2')]}"/>
+                            <field name="company_id" options="{'no_open': True, 'no_create': True}"/>
+                            <field name="user_id" options="{'no_open': True, 'no_create': True}"/>
+                        </group>
+                        <group string="بيانات الصيانه" attrs="{'invisible':[('state', '=', 'new_request')]}">
+                            <field name="request_date" />
+                            <field name="maintenance_type" attrs="{'readonly':[('state', '=', 'repaired,scrap')]}"/>
+                            <field name="priority" widget="priority" attrs="{'readonly':[('state', '=', 'repaired,scrap')]}"/>
+                            <field name="scheduled_Date" attrs="{'readonly':[('state', '=', 'repaired,scrap')]}"/>
+                            <label for="duration"/>
+                            <div>
+                                <field name="duration" attrs="{'readonly':[('state', '=', 'repaired,scrap')]}"
+                                       widget="float_time"
+                                       class="oe_inline"/> <span class="ml8">hours</span>
+                            </div>
+                        </group>
+
+                    </group>
+                    <notebook>
+                        <page string="الاعطال" attrs="{'invisible':[('state', '=', 'new_request')]}">
+                            <field name="malfunctions_lines" />
+                        </page>
+                        <page string="الاسبيــــرات"  attrs="{'invisible':[('state', '=', 'new_request')]}" >
+                        <group>
+                            <field name="location_id" context="{'maintenance_id' : id}" options="{'no_create': True}"/>
+                        </group>
+                            <field name="prodect_line" context="{'location' : location_id }">
+                                <tree editable="button">
+                                    <field name="product_id" />
+                                    <field name="product_uom_id" />
+                                    <field name="default_code" />
+                                    <field name="p_type" />
+                                    <field name="qty_available" />
+                                    <field name="quantity" />
+                                    <field name="maintenance_id" invisible="1" />
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="التقرير النهائي" attrs="{'invisible':[('state', '=', 'new_request')]}">
+                            <field name="emp_line" >
+                                <tree editable="button">
+                                    <field name="star_date" />
+                                    <field name="emp_id"/>
+                                    <field name="section_id" />
+                                    <field name="end_date" />
+                                    <field name="last_result" />
+                                    <field name="maintenane_id"  invisible="1" />
+                                </tree>
+                                <form>
+                                    <group>
+                                        <group>
+                                            <field name="emp_id" />
+                                            <field name="section_id" />
+                                        </group>
+                                        <group>
+                                            <field name="last_result"/>
+                                        </group>
+                                    </group>
+                                </form>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers" />
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread" />
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- kanban view for maintenance -->
+    <record id="maintenance_kanban_view" model="ir.ui.view">
+        <field name="name">maintenance.request.kanban</field>
+        <field name="model">workshope.maintenance</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="state" >
+                <field name="state"/>
+                <field name="color"/>
+                <field name="priority"/>
+                <field name="chassis_id"/>
+                <field name="user_id"/>
+                <field name="kanban_state"/>
+                <field name="message_needaction_counter"/>
+                <field name="activity_ids" />
+                <field name="activity_state" />
+                <templates >
+                    <t t-name="kanban-tooltip">
+                       <ul class="oe_kanban_tooltip">
+                          <!-- <li t-if="record.maintenance_seq.raw_value"><b>Category:</b> <t t-esc="record.maintenance_seq.value"/></li> -->
+                          <li t-if="record.user_id.raw_value"><b>Request to:</b> <t t-esc="record.user_id.value"/></li>
+                       </ul>
+                    </t>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_color_#{kanban_getcolor(record.color.raw_value)} oe_kanban_card oe_kanban_global_click oe_semantic_html_override">
+                            <div class="o_dropdown_kanban dropdown">
+
+                                <a role="button" class="dropdown-toggle o-no-caret btn" data-toggle="dropdown" data-display="static" href="#" aria-label="Dropdown menu" title="Dropdown menu">
+                                    <span class="fa fa-ellipsis-v"/>
+                                </a>
+                                <div class="dropdown-menu" role="menu">
+                                    <t t-if="widget.editable"><a role="menuitem" type="edit" class="dropdown-item">Edit...</a></t>
+                                    <t t-if="widget.deletable"><a role="menuitem" type="delete" class="dropdown-item">Delete</a></t>
+                                    <ul class="oe_kanban_colorpicker" data-field="color"/>
+                                </div>
+                            </div>
+                            <div class="oe_kanban_content" tooltip="kanban-tooltip">
+                                <div class="o_kanban_record_top">
+                                    <b class="o_kanban_record_title"><field name="request_date"/></b>
+                                </div>
+                                <div class="o_kanban_record_body">
+                                    <span name="ouser_id" t-if="record.user_id.raw_value">Requested by : <field name="user_id"/><br/></span>
+                                    <span class="oe_grey" t-if="record.chassis_id.raw_value"><field name="chassis_id"/><br/></span>
+                                </div>
+                                <div class="o_kanban_record_bottom">
+                                    <div class="oe_kanban_bottom_left">
+                                        <field name="priority" widget="priority"/>
+                                        <t t-if="record.message_needaction_counter.raw_value">
+                                            <span role="alert" class='oe_kanban_mail_new' title='Unread Messages'><i class='fa fa-comments' role="img" aria-label="Unread Messages"/><t t-raw="record.message_needaction_counter.raw_value"/></span>
+                                        </t>
+                                        <div class="o_kanban_inline_block ml4 mr4">
+                                            <field name="activity_ids" widget="kanban_activity" />
+                                        </div>
+                                    </div>
+                                    <div class="oe_kanban_bottom_right">
+                                        <field name="kanban_state" widget="state_selection"/>
+                                        <img t-att-src="kanban_image('res.users', 'image_small', record.user_id.raw_value)" t-att-title="record.user_id.value" t-att-alt="record.user_id.value" width="24" height="24" class="oe_kanban_avatar float-right"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="oe_clear"></div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+    <!-- form view for workshope maintnence -->
+    <record id="maintenane_tree_view" model="ir.ui.view">
+        <field name="name">Maintenance Request</field>
+        <field name="model">workshope.maintenance</field>
+        <field name="arch" type="xml">
+            <tree string="" decoration-bf="state=='new_request'" decoration-success="state=='repaired'"
+                    decoration-warning="state=='confirmation'" decoration-it="state=='inventory'"
+                    decoration-danger="state=='in_progress'" decoration-info="state=='wait_confirm'" decoration-muted="state=='scrap'">
+                <field name="maintenance_seq" />
+                <field name="request_date"   />
+                <field name="num_signal"   />
+                <field name="plate_number"/>
+                <field name="chassis_id"/>
+                <field name="car_type"/>
+                <field name="rece_of"/>
+                <field name="category" />
+                <field name="officer" attrs="{'invisible':[('category', '!=', '1')]}"/>
+                <field name="warrant_officer" attrs="{'invisible':[('category', '!=', '2')]}" />
+                <field name="state" />
+            </tree>
+        </field>
+    </record>
+   
+
+    <!-- action view for workshope maintnence -->
+    <record id="maintnence_search_view" model="ir.ui.view">
+        <field name="name">Maintenance Request</field>
+        <field name="model">workshope.maintenance</field>
+        <field name="arch" type="xml">
+            <search string="">
+                <field name="maintenance_seq" string="by" />
+                <field name="num_signal" string="by"/>
+                <field name="plate_number" string="by"/>
+                <field name="car_type" string="by"/>
+                <field name="rece_of" string="by"/>
+                <field name="units_id" string="by"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- action view for workshope maintnence -->
+    <record id="in_maint_action" model="ir.actions.act_window">
+        <field name="name">Maintenance Request</field>
+        <field name="res_model">workshope.maintenance</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,kanban,form</field>
+        <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a New Job !
+                </p>
+        </field>
+    </record>
+
+    <!-- inherit warehouse in company -->
+    <record model="ir.ui.view" id="location_inhert_id">
+        <field name="name">location</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <field name="partner_id" position="before">
+                <field name="warehouse_id" />
+            </field>
+        </field>
+    </record>
+
+</odoo>

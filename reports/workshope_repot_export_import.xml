@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="product_export_import">
+        <t t-call="web.html_container" style="max-width:100% !important;">
+            <t t-call="web.external_layout">
+                <div class="page" style="font-size: 24px;font-family:KacstOffice,KacstOne; max-width:100% !important;">
+                    <table cellpadding="5" border="0" width="100%"  align="center" dir="rtl" style="font-size:20px;">
+                        <table cellpadding="5" border="0" width="100%" align="center" dir="rtl" style="font-size: 20px;">
+                            <tr><td><br /></td></tr>
+                            <tr><td width="100%"><center> <h2><b> تقــريـر الصــادر والــوارد </b></h2></center> </td></tr>
+                            <!-- <tr><td width="100%"><center> <h3><b>  تقرير الاداء من تاريخ  الي <t t-esc="end_date" />  </b></h3></center> </td></tr> -->
+                        </table>   
+
+                       <table cellpadding="5" border="0" width="100%" align="center" dir="rtl" style="font-size: 20px;">
+                            <tr><td></td></tr>
+                            <tr>
+                                <td width="30%" align="right"><h4>مــن تــاريـخ :   <b><t t-esc="start_date" /> </b></h4></td>
+                                <td width="40%"> </td>
+                                <td width="40%" align="right"><h4> الــوقــت :   <b><span t-esc="time.strftime('%H:%M:%S')"/> </b></h4></td>
+                            </tr>  
+
+                            <tr><td></td></tr>
+                            <tr>
+                                <td width="30%" align="right"><h4>الي تــاريـخ :   <b><t t-esc="end_date" /> </b></h4></td>
+                                <td width="40%"> </td>
+                                <td width="40%" align="right"><h4> التاريخ :   <b><span t-esc="time.strftime('%Y-%m-%d')"/> </b></h4></td>
+                                <!-- %Y-%m-%d -->
+                            </tr>
+
+                            <tr><td></td></tr>   
+                            <tr>
+                                <td width="30%" colspan="2" align="right"><h4><b>  أســم المستــودع  ( <t t-esc="stock_id" /> ) </b></h4></td>
+                            </tr> 
+
+                            <tr><td></td></tr>                                        
+                        </table> 
+                        
+
+                        <table border="0" cellpadding="2" dir="rtl" width="100%" align="center">
+                            <tr>
+                                <td width="15%" style="background-color: #666; color: #FFF; border-radius: 1px;" align="center"> <b> رمز الصنف </b></td>
+                                <td width="20%" style="background-color: #666; color: #FFF; border-radius: 1px;" align="center"> <b> أسم الصنف </b></td>
+                                <td width="15%" style="background-color: #666; color: #FFF; border-radius: 1px;" align="center"> <b> الــوارد </b></td>
+                                <td width="15%" style="background-color: #666; color: #FFF; border-radius: 1px;" align="center"> <b> الصــادر</b></td>
+                                <td width="20%" style="background-color: #666; color: #FFF; border-radius: 1px;" align="center"> <b> الكميــة المتبقية</b></td>
+                            </tr>  
+
+                            <tr>
+                                <td width="15%" align="center"> <t t-esc="barcode" /></td>
+                                <td width="20%" align="center"><t t-esc="product_id" /></td>
+                                <td width="15%" align="center"> <t t-esc="in_res" /></td>
+                                <td width="15%" align="center"> <t t-esc="out_res" /></td>
+                                <td width="20%" align="center"> <t t-esc="balance" /></td>
+                            </tr> 
+                            <tr><td colspan="8" style="border-bottom:1px #8c8c8c solid;"></td></tr>
+                        </table>                                
+                    </table>
+                </div>
+            </t>  
+        </t>
+    </template>
+</odoo>
